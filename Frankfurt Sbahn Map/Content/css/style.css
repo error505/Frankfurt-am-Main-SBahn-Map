@@ -1,0 +1,69 @@
+ body {
+     font-family: Verdana;
+     font-size: 8pt;
+ }
+ /* The main DIV for the map */
+ 
+ .subway-map {
+     margin: 0;
+     width: 1280px;
+     height: 1200px;
+     background-color: white;
+ }
+ /* Text labels */
+ 
+ .text {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ #legend {
+     float: left;
+     width: 250px;
+     height: 400px;
+ }
+ 
+ #legend div {
+     height: 25px;
+ }
+ 
+ #legend span {
+     margin: 5px 5px 5px 0;
+ }
+ 
+ .subway-map span {
+     margin: 5px 5px 5px 0;
+ }
+ 
+ .active {
+     background-color: #ccc;
+     border-color: #333399;
+ }
+ 
+ .rotate {
+     -moz-transform: rotate(-90.0deg);
+     /* FF3.5+ */
+     -o-transform: rotate(-90.0deg);
+     /* Opera 10.5 */
+     -webkit-transform: rotate(-90.0deg);
+     /* Saf3.1+, Chrome */
+     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+     /* IE6,IE7 */
+     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+     /* IE8 */
+ }
+ 
+ @keyframes pulse {
+     50% {
+         background-color: #ccc
+     }
+ }
+ 
+ .box {
+     color: #fff;
+     transition: background-color 0.5s ease-out;
+ }
+ 
+ .box.active {
+     background-color: #ccc;
+ }

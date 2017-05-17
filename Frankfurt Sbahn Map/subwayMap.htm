@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title ng-bind="(PageTitle || 'Loading...')"></title>
+    <script type="text/javascript" src="Scripts/Jquery/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/SubwayMap/jquery.subwayMap-0.5.0.js"></script>
+    <script type="text/javascript" src="Scripts/angular-1.5.0/angular.min.js"></script>
+    <script type="text/javascript" src="Scripts/angular-1.5.0/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="Scripts/angular/app.js"></script>
+    <script type="text/javascript" src="Scripts/angular/controller/sbahn.controller.js"></script>
+    <script type="text/javascript" src="Scripts/angular/sbahn.service.js"></script>
+    <script type="text/javascript" src="Scripts/angular/directive/s1.directive.js"></script>
+    <script type="text/javascript" src="Scripts/angular/directive/s9.directive.js"></script>
+    <script type="text/javascript" src="Scripts/angular/directive/rhein.directive.js"></script>
+    <script type="text/javascript" src="Scripts/angular/directive/mainflus.directive.js"></script>
+    <link rel="stylesheet" href="Content/css/style.css" media="all">
+    <link rel="stylesheet" href="Plugins/bootstrap-3.3.6-dist/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="Plugins/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" media="all">
+</head>
+
+<body data-ng-controller="SbahnController" id="map" data-ng-app="app">
+    <div class="subway-map" data-columns="45" data-rows="45" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="true" data-lineWidth="8">
+        <rhein></rhein>
+        <main-flus></main-flus>
+        <s1></s1>
+        <s9></s9>
+    </div>
+    <div id="legend"></div>
+</body>
+
+</html>
